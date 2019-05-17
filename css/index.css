@@ -177,12 +177,25 @@ header {
   justify-content: space-between;
   border-bottom: dashed 2px #c0c0c0;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 5% 8px;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-between;
   width: 42%;
   align-items: center;
   padding-right: 13%;
+}
+@media (max-width: 500px) {
+  header nav {
+    padding: 16px 7% 0;
+    width: 100%;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -192,6 +205,12 @@ header nav a {
 header h1 {
   padding-left: 10%;
   color: #212529;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 3em;
+    padding-left: 0;
+  }
 }
 .footer {
   width: 100%;
@@ -245,10 +264,12 @@ header h1 {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+    padding: 0;
   }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+  width: 100%;
 }
 .home .inverse-content {
   padding-bottom: 30px;
