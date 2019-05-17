@@ -6,23 +6,35 @@
       margin-top: 20px;
     }
   }
+  @media @mobile {
+    padding: 0px 5%;
+}
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @mobile {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        width: 100%;
+      }
       img {
         border-radius: 10px;
       }
