@@ -1,10 +1,11 @@
 // Mixins in here
 
-.button() {
-    font-size: 1.8em;
-    background-color: teal;
+.button(@width: 200px) {
+    font-size: 1.78em;
+    background-color: #17A2B8;
     color: @main-bg;
-    width: 200px;
+    width: @width;
     border-radius: 17px;
-    padding: 14px 52px;
+    padding: 14px 0;
+    text-align: center;
 }

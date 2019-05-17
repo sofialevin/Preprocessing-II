@@ -283,9 +283,19 @@ header h1 {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 1;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -296,15 +306,39 @@ header h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 45px 0;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
 .home .content-pick .destination .btn {
-  font-size: 1.8em;
-  background-color: teal;
+  font-size: 1.78em;
+  background-color: #17A2B8;
   color: #FFFFFF;
   width: 200px;
   border-radius: 17px;
-  padding: 14px 52px;
+  padding: 14px 0;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    font-size: 1.78em;
+    background-color: #17A2B8;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 17px;
+    padding: 14px 0;
+    text-align: center;
+  }
 }
